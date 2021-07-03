@@ -6,11 +6,11 @@
 #     - /bin/cp -fr * $DEPLOYPATH
 
 
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/theinaf8/public_html/
-    - /bin/cp * $DEPLOYPATH
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/theinaf8/public_html/
+#     - /bin/cp * $DEPLOYPATH
     
 # ---
 # deployment:
