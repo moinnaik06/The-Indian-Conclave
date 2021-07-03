@@ -1,10 +1,19 @@
 
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/theinaf8/public_html/
+#     - /bin/cp -fr * $DEPLOYPATH
+
+
 ---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/theinaf8/public_html/
-    - /bin/cp -fr * $DEPLOYPATH
-
+    - cd /home/theinaf8/public_html
+    - rm -r *
+    - mkdir test
+    
 # ---
 # deployment:
 #   tasks:
