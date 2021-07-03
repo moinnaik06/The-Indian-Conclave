@@ -10,9 +10,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/theinaf8/public_html/
-    - cd /home/theinaf8/public_html
-    - rm -r *
-    - mkdir test
+    - /bin/rm -r * $DEPLOYPATH
+    - /bin/mkdir test * $DEPLOYPATH
+    - /bin/cp -fr * $DEPLOYPATH
     
 # ---
 # deployment:
